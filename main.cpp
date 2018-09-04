@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 #include<iostream>
-#include<conio.h>
+//#include<conio.h>
 #include "newaccount.h"
 #include "addmoney.h"
 #include "display.h"
