@@ -1,2 +1,2 @@
 # Bank-Management-System
-//.....it is our first joint project.....with me adnan ,,saqib & hanan................///
+.........it is our first joint project.....with me  adnan  and saqib imtyaz .............
