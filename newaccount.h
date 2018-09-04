@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 #include<fstream>
-#include<dos.h>
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
 #include<string>
-#include<conio.h>
+
+
 long int updatebalance;
 int  id()
 {
@@ -23,10 +23,28 @@ if(a!=10)
 	exit(0);
 }
 fout.open(phone);
-cin.ignore();
-
 cout<<"Enter your name"<<endl;
+cin.ignore();
 getline(cin,name);
+//............time ..........
+
+
+     // Declaring argument for time()
+    time_t tt;
+ 
+    // Declaring variable to store return value of
+    // localtime()
+    struct tm * ti;
+
+    // Applying time()
+    time (&tt);
+ 
+    // Using localtime()
+   ti = localtime(&tt);
+   
+//.............................
+
+
 fout<<"\nNAME= "<<name;
 cout<<"Enter your parentage"<<endl;
 getline(cin,parentage);
@@ -40,12 +58,16 @@ if(i!=1)
 {
 
     cout<<"Plese enter ur ammount in numbers"<<endl;
-    scanf("%ld",&money);
+    fout<<"\nDATE OF ADDING MONEY TO ACCOUNT= ";
+//////////////date////////// 
+   fout<< asctime(ti)<<endl;
+///////////////////////////////////   
+ cin>>money;
     
     
-    fout<<"\nTOTAL BALANCE= "<<money;
-    cout<<"Your Balance has been updated"<<endl;
-    
+    fout<<"\nTOTAL BALANCE= "<<money<<endl<<"DATE=";
+    cout<<"\nYour Balance has been updated"<<endl;
+  
 }
 
 
